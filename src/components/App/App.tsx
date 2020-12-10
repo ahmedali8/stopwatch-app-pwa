@@ -1,7 +1,13 @@
 import React from 'react';
+import Timer from '../Timer/Timer';
 
 function App() {
-  return <div>App component</div>;
+  return (
+    <div>
+      <div>App component</div>
+      <Timer />
+    </div>
+  );
 }
 
 export default App;
