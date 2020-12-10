@@ -3,8 +3,8 @@ import Timer from '../Timer/Timer';
 
 function App() {
   return (
-    <div>
-      <div>App component</div>
+    <div className="app-container">
+      <div>Typescript Timer App</div>
       <Timer />
     </div>
   );
