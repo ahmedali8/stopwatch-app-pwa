@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
-      <div className="app-heading">Typescript Timer App</div>
+      <div className="app-heading">Timer App</div>
       <Timer />
     </div>
   );

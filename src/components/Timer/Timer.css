@@ -1,6 +1,6 @@
 .timer-container {
   display: flex;
-  color: #ccc;
+  color: rgb(248, 244, 244);
 }
 
 .timer-container p {
