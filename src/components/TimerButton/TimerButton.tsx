@@ -1,4 +1,5 @@
 import React from 'react';
+import './TimerButton.css';
 
 interface TimerButtonProps {
   btnId: string;
