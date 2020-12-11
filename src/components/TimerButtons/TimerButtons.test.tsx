@@ -1,12 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Timer from './Timer';
-import TimerButtons from '../TimerButtons/TimerButtons';
+import TimerButtons from './TimerButtons';
+import TimerButton from '../TimerButton/TimerButton';
 
 describe('Timer', () => {
   let wrapper: any;
 
-  beforeEach(() => (wrapper = shallow(<Timer />)));
+  beforeEach(
+    () => (wrapper = shallow(<TimerButtons setTimeInSeconds={jest.fn()} />))
+  );
 
   it('should display a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1);
@@ -25,10 +27,10 @@ describe('Timer', () => {
     expect(wrapper.find('.timer-btn-container').length).toBe(1);
   });
 
-  it('should display <Controls /> components', () => {
+  it('should display <TimerButton /> components', () => {
     expect(
       wrapper.containsMatchingElement(
-        <TimerButtons setTimeInSeconds={jest.fn()} />
+        <TimerButton buttonAction={''} buttonValue={''} />
       )
     ).toEqual(true);
   });

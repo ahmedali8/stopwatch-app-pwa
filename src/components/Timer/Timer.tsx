@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TimerButtons from '../TimerButtons/TimerButtons';
 
 function Timer() {
   const [timeInSeconds, setTimeInSeconds] = useState<number>(0);
@@ -29,6 +30,9 @@ function Timer() {
         <p className="hours">{hours}</p>
         <p className="minutes">{minutes}</p>
         <p className="seconds">{seconds}</p>
+      </section>
+      <section className="timer-btn-container">
+        <TimerButtons setTimeInSeconds={setTimeInSeconds} />
       </section>
     </div>
   );
