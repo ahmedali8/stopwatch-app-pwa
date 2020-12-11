@@ -25,11 +25,11 @@ describe('Timer', () => {
     expect(wrapper.find('.timer-btn-container').length).toBe(1);
   });
 
-  it('should display <Controls /> components', () => {
-    expect(
-      wrapper.containsMatchingElement(
-        <TimerButtons setTimeInSeconds={jest.fn()} />
-      )
-    ).toEqual(true);
-  });
+  // it('should display <TimerButtons /> components', () => {
+  //   expect(
+  //     wrapper.containsAnyMatchingElements(
+  //       <TimerButtons setTimeInSeconds={jest.fn()} />
+  //     )
+  //   ).toEqual(true);
+  // });
 });

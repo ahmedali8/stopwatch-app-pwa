@@ -26,11 +26,11 @@ const TimerButtons: React.FC<TimerButtonsProps> = ({ setTimeInSeconds }) => {
   };
 
   return (
-    <>
+    <div>
       <TimerButton buttonAction={startTimer} buttonValue={'Start'} />
       <TimerButton buttonAction={stopTimer} buttonValue={'Stop'} />
       <TimerButton buttonAction={resetTimer} buttonValue={'Reset'} />
-    </>
+    </div>
   );
 };
 
