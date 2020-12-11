@@ -8,7 +8,12 @@ describe('Timer Button', () => {
   beforeEach(
     () =>
       (wrapper = shallow(
-        <TimerButton buttonAction={jest.fn()} buttonValue={''} />
+        <TimerButton
+          btnId={''}
+          buttonAction={jest.fn()}
+          buttonValue={''}
+          disableBtn={false}
+        />
       ))
   );
 

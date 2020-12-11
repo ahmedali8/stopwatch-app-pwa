@@ -1,15 +1,15 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Timer from './Timer';
 import TimerButtons from '../TimerButtons/TimerButtons';
 
 describe('Timer', () => {
   let wrapper: any;
 
-  beforeEach(() => (wrapper = shallow(<Timer />)));
+  beforeEach(() => (wrapper = mount(<Timer />)));
 
-  it('should display a <div />', () => {
-    expect(wrapper.find('div').length).toEqual(1);
+  it('should display <div />', () => {
+    expect(wrapper.find('div').length).toEqual(5);
   });
 
   it('should display a `section` with 3 `p` tags', () => {
@@ -31,5 +31,15 @@ describe('Timer', () => {
   //       <TimerButtons setTimeInSeconds={jest.fn()} />
   //     )
   //   ).toEqual(true);
+  // });
+
+  // it('invokes the startTimer when the click button is clicked', () => {
+  //   console.log(wrapper.debug());
+  //   wrapper.find('#start-timer').simulate('click');
+  //   expect(wrapper.find('.seconds').text()).toBe('01');
+  // });
+
+  // it('tt', () => {
+  //   expect(wrapper.find('.seconds').text()).toBe('01');
   // });
 });

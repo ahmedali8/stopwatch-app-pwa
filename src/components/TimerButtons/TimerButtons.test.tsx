@@ -18,7 +18,7 @@ describe('Timer Buttons', () => {
   //   console.log(wrapper.debug());
   //   expect(
   //     wrapper.contains(
-  //       <TimerButton buttonAction={jest.fn()} buttonValue={''} />
+  //       <TimerButton id={''} buttonAction={jest.fn()} buttonValue={''} />
   //     )
   //   ).toEqual(true);
   // });
