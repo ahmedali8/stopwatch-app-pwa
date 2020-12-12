@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
-      <div className="app-heading">Timer App</div>
+      <div className="app-heading">Stopwatch App</div>
       <Timer />
     </div>
   );
