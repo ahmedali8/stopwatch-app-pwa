@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v2';
+const CACHE_NAME = 'v3';
 const assets = [
   '/',
   '/index.html',
@@ -14,7 +14,6 @@ const assets = [
   '/mstile-150x150.png',
   '/favicon.ico',
   '/browserconfig.xml',
-  '/mstile-150x150.png',
   'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
 ];
 
