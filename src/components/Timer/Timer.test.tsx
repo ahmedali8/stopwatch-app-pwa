@@ -16,9 +16,9 @@ describe('Timer', () => {
     expect(wrapper.find('.timer-container').length).toBe(1);
     expect(wrapper.find('p').length).toBe(3);
 
-    expect(wrapper.find('.hours').text()).toBe('0');
-    expect(wrapper.find('.minutes').text()).toBe('0');
-    expect(wrapper.find('.seconds').text()).toBe('0');
+    expect(wrapper.find('.hours').text()).toBe('00');
+    expect(wrapper.find('.minutes').text()).toBe('00');
+    expect(wrapper.find('.seconds').text()).toBe('00');
   });
 
   it('should display `timer-btn-container` ', () => {
